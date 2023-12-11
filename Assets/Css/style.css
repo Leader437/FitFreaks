@@ -1,0 +1,46 @@
+:root {
+  /* Font size */
+  font-size: 10px;
+  --fs-1: 4rem;
+  --fs-2: calc(2.513rem + 1vw);
+  --fs-3: calc(2.113rem + 1vw);
+  --fs-4: 1.8rem;
+  --fs-5: 1.6rem;
+  --fs-6: 1.4rem;
+  --fs-7: 1.2rem;
+
+  @media only screen and (min-width: 980px) {
+    /*Font sizes*/
+    :root {
+      --fs-1: 6rem;
+      --fs-2: calc(3.213rem + 1vw);
+      --fs-3: calc(2.713rem + 1vw);
+      --fs-4: 2.2rem;
+      --fs-5: 1.7rem;
+      --fs-6: 1.6rem;
+      --fs-7: 1.4rem;
+    }
+  }
+
+  /* Color */
+  --pri-color: #ccf739;
+  --bg-pri: #1f1f1f;
+  --bg-sec: #171616;
+  --accent-color: #bdbdbd;
+  --text-pri: #ffffff;
+  --text-sec: #9e9e9e;
+
+  /* Font Family */
+  --f-head: "DM Sans", sans-serif;
+  --f-content: "Rethink Sans", sans-serif;
+}
+
+
+/*========
+===Home===
+========*/
+
+
+body {
+    background-color: var(--pri-color);
+}
