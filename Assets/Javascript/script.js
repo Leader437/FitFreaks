@@ -35,3 +35,15 @@ navItems.forEach(item => {
         stick3.classList.remove('three-active');
     });
 });
+
+window.onscroll = () => {
+    // Add background color to the header upon scroll
+    header.classList.toggle('header-shadow', window.scrollY > 50);
+
+    /*
+    if (window.scrollY > 100) {
+        scrollTop.style.display = "block";
+    } else {
+        scrollTop.style.display = "none";
+    }*/
+}
