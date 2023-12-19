@@ -34,10 +34,9 @@
   --f-head: "DM Sans", sans-serif;
   --f-content: "Rethink Sans", sans-serif;
 
-    /* Transition */
-    --transition-1: 0.25s ease-in-out;
+  /* Transition */
+  --transition-1: 0.25s ease-in-out;
 }
-
 
 /*===================
 ===Utility Classes===
@@ -124,6 +123,7 @@ header {
   position: fixed;
   width: 100%;
   transition: background-color var(--transition-1);
+  z-index: 999;
 }
 
 #navbar {
@@ -204,6 +204,8 @@ header {
   height: 2.4rem;
   border: none;
   transform: rotate(-45deg);
+  cursor: pointer;
+  z-index: 999;
 }
 
 .hamburger .one,
@@ -254,6 +256,7 @@ body {
 #home {
   position: relative;
   min-height: 100vh;
+  z-index: 1;
 }
 
 .background-video {
@@ -299,16 +302,37 @@ body {
 }
 
 .home-btn {
-  width: 5rem;
-  height: 5rem;
-  border: 1px solid var(--pri-color);
+  width: calc(var(--fs-1) + 2vw);
+  height: calc(var(--fs-1) + 2vw);
+  border: 1.3px solid var(--pri-color);
+  margin-top: 3rem;
   border-radius: 50%;
   background-color: transparent;
   display: grid;
   place-items: center;
+  cursor: pointer;
+  transform: scale(1.4);
+  z-index: 999;
+  transition: background-color var(--transition-1), transform var(--transition-1);
 }
 
+.home-btn:hover {
+  background-color: var(--pri-color);
+  transform: scale(1);
+}
 
+.home-btn img {
+  filter: invert(100%) sepia(2%) saturate(138%) hue-rotate(223deg) brightness(114%) contrast(100%);
+}
+
+.marquee p {
+  font-size: calc(var(--fs-1) + 3vw);
+  font-weight: 900;
+  font-family: var(--f-content);
+  -webkit-text-stroke: 1px var(--pri-color);
+  -webkit-text-fill-color: transparent;
+  margin-top: 5rem;
+}
 
 
 
@@ -329,6 +353,12 @@ body {
   }
   .header-shadow #navbar {
     padding-block: 0.3rem;
+  }
+  #home {
+    max-width: 70%;
+  }
+  .home-para {
+    max-width: 90%;
   }
 }
 
@@ -380,6 +410,23 @@ body {
   .nav-anchor:active::before {
     width: calc(2rem + 100%);
   }
+  #home {
+    /* max-width: 100%; */
+  }
+  .home-content {
+    top: 30%;
+    gap: 2rem;
+  }
+  .home-title {
+    font-size: calc(var(--fs-1) + 0.5vw);
+  }
+  .home-heading {
+    font-size: calc(var(--fs-4) + 0.2vw);
+  }
+  .home-para {
+    font-size: calc(var(--fs-7) + 0.3vw);
+    max-width: 80%;
+  }
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -390,6 +437,9 @@ body {
   }
   .nav-anchor {
     font-size: var(--fs-5);
+  }
+  .home-content {
+    top: 40%;
   }
 }
 
@@ -417,6 +467,9 @@ body {
     transform: scale(2.3);
     translate: 1rem;
   }
+  .home-para {
+    max-width: 70%;
+  }
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -436,5 +489,9 @@ body {
   /*Navbar*/
   .switch {
     font-size: 1.2rem;
+  }
+
+  .home-para {
+    max-width: 60%;
   }
 }
