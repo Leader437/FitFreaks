@@ -47,3 +47,31 @@ window.onscroll = () => {
         scrollTop.style.display = "none";
     }*/
 }
+
+
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
+
+// import styles bundle
+import 'swiper/css/bundle';
+
+// init Swiper:
+const swiper = new Swiper(".mySwiper", {
+    autoplay: {
+        delay: 1500,
+        disableonInteraction: 'false',
+    },
+    loop: true,
+    spaceBetween: 25,
+    freeMode: 'true',
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: true,
+    
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+});
