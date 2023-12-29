@@ -24,6 +24,7 @@
   "dependencies": {
     "boxicons": "^2.1.4",
     "clean-webpack-plugin": "^4.0.0",
+    "gsap": "^3.12.4",
     "swiper": "^11.0.5"
   }
 }
