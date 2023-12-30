@@ -1,3 +1,7 @@
 /node_modules/
 /Assets/
+<<<<<<< HEAD
 /.vs/
+=======
+/.VS/
+>>>>>>> 08a61dc7d3537a935bc2ca6b973c43a1f99755f2
