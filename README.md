@@ -6,10 +6,9 @@ Welcome to FitFreaks, a fitness tracking and workout management application. Thi
 
 ## Features
 
-- **User Authentication**: Securely sign up and log in to your personalized account.
-- **Workout Tracking**: Record and monitor your daily workouts, including exercises, sets, and reps.
+- **Weekly Schedule**: Keep track of your workout with our weekly schedule.
+- **Feedback**: Stay updated with the latest feedback our clients.
 - **Goal Setting**: Set fitness goals and track your progress over time.
-- **Exercise Database**: Access a comprehensive database of exercises to customize your workouts.
 - **Community Interaction**: Connect with other FitFreaks users, share achievements, and provide support.
 - **Responsive Design**: Enjoy a seamless experience across various devices - desktop, tablet, and mobile.
 
